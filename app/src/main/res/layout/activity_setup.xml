@@ -1,0 +1,996 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_setup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.shelfspace.michael.wayfinders.Setup">
+
+    <ScrollView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:id="@+id/player2Button"
+                    android:text="2 Players"
+                    android:layout_marginBottom="12dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="1.0"
+                    />
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:id="@+id/player3Button"
+                    android:text="3 Players"
+                    android:layout_marginBottom="12dp"
+                    android:layout_alignTop="@+id/imageButton"
+                    android:layout_toRightOf="@+id/imageButton"
+                    android:layout_toEndOf="@+id/imageButton"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="1.0" />
+
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:id="@+id/player4Button"
+                    android:text="4 Players"
+                    android:layout_marginBottom="12dp"
+                    android:layout_alignTop="@+id/imageButton2"
+                    android:layout_toRightOf="@+id/imageButton2"
+                    android:layout_toEndOf="@+id/imageButton2"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="1.0" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/island00"
+                    android:id="@+id/imageButton00"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="1.0" />
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/island01"
+                    android:id="@+id/imageButton01"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="1.0" />
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/island02"
+                    android:id="@+id/imageButton02"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="1.0" />
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/island03"
+                    android:id="@+id/imageButton03"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="1.0" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/island04"
+                    android:id="@+id/imageButton04"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="1.0" />
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/island05"
+                    android:id="@+id/imageButton05"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="1.0" />
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/island06"
+                    android:id="@+id/imageButton06"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="1.0" />
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/island07"
+                    android:id="@+id/imageButton07"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="1.0" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/island08"
+                    android:id="@+id/imageButton08"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="1.0" />
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/island09"
+                    android:id="@+id/imageButton09"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="1.0" />
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/island10"
+                    android:id="@+id/imageButton10"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="1.0" />
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/island11"
+                    android:id="@+id/imageButton11"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="1.0" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/island12"
+                    android:id="@+id/imageButton12"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="1.0" />
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/island13"
+                    android:id="@+id/imageButton13"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="1.0" />
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/island14"
+                    android:id="@+id/imageButton14"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="1.0" />
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/island15"
+                    android:id="@+id/imageButton15"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="1.0" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/island16"
+                    android:id="@+id/imageButton16"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="1.0" />
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/island17"
+                    android:id="@+id/imageButton17"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="1.0" />
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/island18"
+                    android:id="@+id/imageButton18"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="1.0" />
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/island19"
+                    android:id="@+id/imageButton19"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="1.0" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/island20"
+                    android:id="@+id/imageButton20"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="1.0" />
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/island21"
+                    android:id="@+id/imageButton21"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="1.0" />
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/island22"
+                    android:id="@+id/imageButton22"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="1.0" />
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/island23"
+                    android:id="@+id/imageButton23"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="1.0" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/island24"
+                    android:id="@+id/imageButton24"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="1.0" />
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/island25"
+                    android:id="@+id/imageButton25"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="1.0" />
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/island26"
+                    android:id="@+id/imageButton26"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="1.0" />
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/island27"
+                    android:id="@+id/imageButton27"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="1.0" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/island28"
+                    android:id="@+id/imageButton28"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="1.0" />
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/island29"
+                    android:id="@+id/imageButton29"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="1.0" />
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/island30"
+                    android:id="@+id/imageButton30"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="1.0" />
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/island31"
+                    android:id="@+id/imageButton31"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="1.0" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/island32"
+                    android:id="@+id/imageButton32"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="1.0" />
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/island33"
+                    android:id="@+id/imageButton33"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="1.0" />
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/island34"
+                    android:id="@+id/imageButton34"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="1.0" />
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/island35"
+                    android:id="@+id/imageButton35"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="1.0" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/island36"
+                    android:id="@+id/imageButton36"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="1.0" />
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/island37"
+                    android:id="@+id/imageButton37"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="1.0" />
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/island38"
+                    android:id="@+id/imageButton38"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="1.0" />
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/island39"
+                    android:id="@+id/imageButton39"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="1.0" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/island40"
+                    android:id="@+id/imageButton40"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="1.0" />
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/island40"
+                    android:id="@+id/imageButton40"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="1.0" />
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/island41"
+                    android:id="@+id/imageButton41"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="1.0" />
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/island42"
+                    android:id="@+id/imageButton42"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="1.0" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/island43"
+                    android:id="@+id/imageButton43"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="1.0" />
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/island44"
+                    android:id="@+id/imageButton44"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="1.0" />
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/island45"
+                    android:id="@+id/imageButton45"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="1.0" />
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/island46"
+                    android:id="@+id/imageButton46"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="1.0" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/island47"
+                    android:id="@+id/imageButton47"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="1.0" />
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/island48"
+                    android:id="@+id/imageButton48"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="1.0" />
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/island49"
+                    android:id="@+id/imageButton49"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="1.0" />
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/island50"
+                    android:id="@+id/imageButton50"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="1.0" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/island51"
+                    android:id="@+id/imageButton51"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="1.0" />
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/island52"
+                    android:id="@+id/imageButton52"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="1.0" />
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/island53"
+                    android:id="@+id/imageButton53"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="1.0" />
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/island54"
+                    android:id="@+id/imageButton54"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="1.0" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/island55"
+                    android:id="@+id/imageButton55"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="1.0" />
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/island56"
+                    android:id="@+id/imageButton56"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="1.0" />
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/island57"
+                    android:id="@+id/imageButton57"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="1.0" />
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/island58"
+                    android:id="@+id/imageButton58"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="1.0" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/island59"
+                    android:id="@+id/imageButton59"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="1.0" />
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/island60"
+                    android:id="@+id/imageButton60"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="1.0" />
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:id="@+id/imageButton61"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="1.0" />/>
+                <ImageButton
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitCenter"
+                    android:adjustViewBounds="true"
+                    android:id="@+id/imageButton62"
+                    android:paddingBottom="1dp"
+                    android:paddingTop="1dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:layout_weight="1.0" />/>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:id="@+id/setupSubmit"
+                android:text="Submit"
+                android:layout_marginTop="12dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:layout_weight="1.0"
+                />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+</LinearLayout>

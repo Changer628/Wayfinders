@@ -1,0 +1,413 @@
+{
+    "version": "1.0",
+    "islands": [
+              {
+                "name": "Island 00",
+                "filename": "island00",
+                "baseValue": 0,
+                "color": "none",
+                "cost": ["yellow", "yellow", "orange"],
+                "ability": false
+              },
+              {
+                "name": "Island 01",
+                "filename": "island01",
+                "baseValue": 2,
+                "color": "blue",
+                "cost": ["blue"],
+                "ability": false
+              },
+              {
+                "name": "Island 02",
+                "filename": "island02",
+                "baseValue": 3,
+                "color": "blue",
+                "cost": ["red", "red"],
+                "ability": true
+              },
+              {
+                "name": "Island 03",
+                "filename": "island03",
+                "baseValue": 3,
+                "color": "blue",
+                "cost": ["orange", "green"],
+                "ability": true
+              },
+              {
+                "name": "Island 04",
+                "filename": "island04",
+                "baseValue": 0,
+                "color": "blue",
+                "cost": ["yellow", "blue", "blue"],
+                "ability": true
+              },
+              {
+                "name": "Island 05",
+                "filename": "island05",
+                "baseValue": 4,
+                "color": "blue",
+                "cost": ["blue", "orange", "green"],
+                "ability": true
+              },
+              {
+                "name": "Island 06",
+                "filename": "island06",
+                "baseValue": 4,
+                "color": "blue",
+                "cost": ["yellow", "red", "orange"],
+                "ability": true
+              },
+              {
+                "name": "Island 07",
+                "filename": "island07",
+                "baseValue": 0,
+                "color": "blue",
+                "cost": ["yellow", "yellow", "yellow", "red"],
+                "ability": true
+              },
+              {
+                "name": "Island 08",
+                "filename": "island08",
+                "baseValue": 0,
+                "color": "blue",
+                "cost": ["blue", "orange", "green", "green"],
+                "ability": true
+              },
+              {
+                "name": "Island 09",
+                "filename": "island09",
+                "baseValue": 5,
+                "color": "blue",
+                "cost": ["yellow", "red", "orange", "green"],
+                "ability": true
+              },
+              {
+                "name": "Island 10",
+                "filename": "island10",
+                "baseValue": 2,
+                "color": "orange",
+                "cost": ["orange"],
+                "ability": false
+              },
+              {
+                "name": "Island 11",
+                "filename": "island11",
+                "baseValue": 3,
+                "color": "orange",
+                "cost": ["blue", "blue"],
+                "ability": true
+              },
+              {
+                "name": "Island 12",
+                "filename": "island12",
+                "baseValue": 3,
+                "color": "orange",
+                "cost": ["yellow", "green"],
+                "ability": true
+              },
+              {
+                "name": "Island 13",
+                "filename": "island13",
+                "baseValue": 0,
+                "color": "orange",
+                "cost": ["red", "orange", "orange"],
+                "ability": true
+              },
+              {
+                "name": "Island 14",
+                "filename": "island14",
+                "baseValue": 4,
+                "color": "orange",
+                "cost": ["yellow", "orange", "green"],
+                "ability": true
+              },
+              {
+                "name": "Island 15",
+                "filename": "island15",
+                "baseValue": 4,
+                "color": "orange",
+                "cost": ["red", "blue", "green"],
+                "ability": true
+              },
+              {
+                "name": "Island 16",
+                "filename": "island16",
+                "baseValue": 0,
+                "color": "orange",
+                "cost": ["red", "red", "red", "blue"],
+                "ability": true
+              },
+              {
+                "name": "Island 17",
+                "filename": "island17",
+                "baseValue": 0,
+                "color": "orange",
+                "cost": ["yellow", "yellow", "orange", "green"],
+                "ability": true
+              },
+              {
+                "name": "Island 18",
+                "filename": "island18",
+                "baseValue": 5,
+                "color": "orange",
+                "cost": ["yellow", "red", "blue", "green"],
+                "ability": true
+              },
+              {
+                "name": "Island 19",
+                "filename": "island19",
+                "baseValue": 2,
+                "color": "green",
+                "cost": ["green"],
+                "ability": false
+              },
+              {
+                "name": "Island 20",
+                "filename": "island20",
+                "baseValue": 3,
+                "color": "green",
+                "cost": ["orange", "orange"],
+                "ability": true
+              },
+              {
+                "name": "Island 21",
+                "filename": "island21",
+                "baseValue": 3,
+                "color": "green",
+                "cost": ["yellow", "red"],
+                "ability": true
+              },
+              {
+                "name": "Island 22",
+                "filename": "island22",
+                "baseValue": 0,
+                "color": "green",
+                "cost": ["blue", "green", "green"],
+                "ability": true
+              },
+              {
+                "name": "Island 23",
+                "filename": "island23",
+                "baseValue": 4,
+                "color": "green",
+                "cost": ["yellow", "red", "green"],
+                "ability": true
+              },
+              {
+                "name": "Island 24",
+                "filename": "island24",
+                "baseValue": 4,
+                "color": "green",
+                "cost": ["yellow", "blue", "orange"],
+                "ability": true
+              },
+              {
+                "name": "Island 25",
+                "filename": "island25",
+                "baseValue": 0,
+                "color": "green",
+                "cost": ["blue", "blue", "blue", "orange"],
+                "ability": true
+              },
+              {
+                "name": "Island 26",
+                "filename": "island26",
+                "baseValue": 0,
+                "color": "green",
+                "cost": ["yellow", "red", "red", "green"],
+                "ability": true
+              },
+              {
+                "name": "Island 27",
+                "filename": "island27",
+                "baseValue": 5,
+                "color": "green",
+                "cost": ["yellow", "red", "blue", "orange"],
+                "ability": true
+              },
+              {
+                "name": "Island 28",
+                "filename": "island28",
+                "baseValue": 2,
+                "color": "yellow",
+                "cost": ["yellow"],
+                "ability": false
+              },
+              {
+                "name": "Island 29",
+                "filename": "island29",
+                "baseValue": 3,
+                "color": "yellow",
+                "cost": ["green", "green"],
+                "ability": true
+              },
+              {
+                "name": "Island 30",
+                "filename": "island30",
+                "baseValue": 3,
+                "color": "yellow",
+                "cost": ["red", "blue"],
+                "ability": true
+              },
+              {
+                "name": "Island 31",
+                "filename": "island31",
+                "baseValue": 0,
+                "color": "yellow",
+                "cost": ["yellow", "yellow", "orange"],
+                "ability": true
+              },
+              {
+                "name": "Island 32",
+                "filename": "island32",
+                "baseValue": 4,
+                "color": "yellow",
+                "cost": ["yellow", "red", "blue"],
+                "ability": true
+              },
+              {
+                "name": "Island 33",
+                "filename": "island33",
+                "baseValue": 4,
+                "color": "yellow",
+                "cost": ["red", "orange", "green"],
+                "ability": true
+              },
+              {
+                "name": "Island 34",
+                "filename": "island34",
+                "baseValue": 0,
+                "color": "yellow",
+                "cost": ["orange", "orange", "orange", "green"],
+                "ability": true
+              },
+              {
+                "name": "Island 35",
+                "filename": "island35",
+                "baseValue": 0,
+                "color": "yellow",
+                "cost": ["yellow", "red", "blue", "blue"],
+                "ability": true
+              },
+              {
+                "name": "Island 36",
+                "filename": "island36",
+                "baseValue": 5,
+                "color": "yellow",
+                "cost": ["red", "blue", "orange", "green"],
+                "ability": true
+              },
+              {
+                "name": "Island 37",
+                "filename": "island37",
+                "baseValue": 2,
+                "color": "red",
+                "cost": ["red"],
+                "ability": false
+              },
+              {
+                "name": "Island 38",
+                "filename": "island38",
+                "baseValue": 3,
+                "color": "red",
+                "cost": ["yellow", "yellow"],
+                "ability": true
+              },
+              {
+                "name": "Island 39",
+                "filename": "island39",
+                "baseValue": 3,
+                "color": "red",
+                "cost": ["blue", "orange"],
+                "ability": true
+              },
+              {
+                "name": "Island 40",
+                "filename": "island40",
+                "baseValue": 0,
+                "color": "red",
+                "cost": ["red", "red", "green"],
+                "ability": true
+              },
+              {
+                "name": "Island 41",
+                "filename": "island41",
+                "baseValue": 4,
+                "color": "red",
+                "cost": ["red", "blue", "orange"],
+                "ability": true
+              },
+              {
+                "name": "Island 42",
+                "filename": "island42",
+                "baseValue": 4,
+                "color": "red",
+                "cost": ["yellow", "blue", "green"],
+                "ability": true
+              },
+              {
+                "name": "Island 43",
+                "filename": "island43",
+                "baseValue": 0,
+                "color": "red",
+                "cost": ["yellow", "green", "green", "green"],
+                "ability": true
+              },
+              {
+                "name": "Island 44",
+                "filename": "island44",
+                "baseValue": 0,
+                "color": "red",
+                "cost": ["red", "blue", "orange", "orange"],
+                "ability": true
+              },
+              {
+                "name": "Island 45",
+                "filename": "island45",
+                "baseValue": 5,
+                "color": "red",
+                "cost": ["yellow", "blue", "orange", "green"],
+                "ability": true
+              },
+              {
+                "name": "Promo Island 01",
+                "filename": "promoIsland01",
+                "baseValue": 0,
+                "color": "blue",
+                "cost": ["blue", "red", "red", "green", "green"],
+                "ability": true
+              },
+              {
+                "name": "Promo Island 02",
+                "filename": "promoIsland02",
+                "baseValue": 0,
+                "color": "red",
+                "cost": ["red", "green", "green", "orange", "orange"],
+                "ability": true
+              },
+              {
+                "name": "Promo Island 03",
+                "filename": "promoIsland03",
+                "baseValue": 10,
+                "color": "green",
+                "cost": ["green", "orange", "orange", "yellow", "yellow"],
+                "ability": true
+              },
+              {
+                "name": "Promo Island 04",
+                "filename": "promoIsland04",
+                "baseValue": 4,
+                "color": "orange",
+                "cost": ["orange", "yellow", "yellow", "blue", "blue"],
+                "ability": true
+              },
+              {
+                "name": "Promo Island 05",
+                "filename": "promoIsland05",
+                "baseValue": 4,
+                "color": "yellow",
+                "cost": ["yellow", "blue", "blue", "red", "red"],
+                "ability": true
+              }
+              ]
+}
