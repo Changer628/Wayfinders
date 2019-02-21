@@ -12,7 +12,8 @@ public class Island {
     static public class MyObject {
         public String name;
         public int baseValue;
-        public String color;
+        public int number;
+        public String colour;
         public String[] cost;
         public boolean ability;
     }

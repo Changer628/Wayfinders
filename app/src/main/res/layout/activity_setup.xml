@@ -23,61 +23,57 @@
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true">
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" >
 
-                <Button
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:scaleType="fitCenter"
-                    android:adjustViewBounds="true"
+            <RadioGroup
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <RadioButton
                     android:id="@+id/player2Button"
-                    android:text="2 Players"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
                     android:layout_marginBottom="12dp"
-                    android:layout_alignParentLeft="true"
-                    android:layout_alignParentStart="true"
-                    android:paddingBottom="1dp"
-                    android:paddingTop="1dp"
-                    android:paddingLeft="1dp"
-                    android:paddingRight="1dp"
                     android:layout_weight="1.0"
-                    />
-
-                <Button
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:scaleType="fitCenter"
                     android:adjustViewBounds="true"
+                    android:paddingBottom="1dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:paddingTop="1dp"
+                    android:scaleType="fitCenter"
+                    android:text="@string/Players2"
+                    android:onClick="onRadioButtonClicked"/>
+
+                <RadioButton
                     android:id="@+id/player3Button"
-                    android:text="3 Players"
-                    android:layout_marginBottom="12dp"
-                    android:layout_alignTop="@+id/imageButton"
-                    android:layout_toRightOf="@+id/imageButton"
-                    android:layout_toEndOf="@+id/imageButton"
-                    android:paddingBottom="1dp"
-                    android:paddingTop="1dp"
-                    android:paddingLeft="1dp"
-                    android:paddingRight="1dp"
-                    android:layout_weight="1.0" />
-
-                <Button
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:scaleType="fitCenter"
-                    android:adjustViewBounds="true"
-                    android:id="@+id/player4Button"
-                    android:text="4 Players"
                     android:layout_marginBottom="12dp"
-                    android:layout_alignTop="@+id/imageButton2"
-                    android:layout_toRightOf="@+id/imageButton2"
-                    android:layout_toEndOf="@+id/imageButton2"
+                    android:layout_weight="1.0"
+                    android:adjustViewBounds="true"
                     android:paddingBottom="1dp"
-                    android:paddingTop="1dp"
                     android:paddingLeft="1dp"
                     android:paddingRight="1dp"
-                    android:layout_weight="1.0" />
-            </TableRow>
+                    android:paddingTop="1dp"
+                    android:scaleType="fitCenter"
+                    android:text="@string/Players3"
+                    android:onClick="onRadioButtonClicked"/>
+
+                <RadioButton
+                    android:id="@+id/player4Button"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_weight="1.0"
+                    android:adjustViewBounds="true"
+                    android:paddingBottom="1dp"
+                    android:paddingLeft="1dp"
+                    android:paddingRight="1dp"
+                    android:paddingTop="1dp"
+                    android:scaleType="fitCenter"
+                    android:text="@string/Players4"
+                    android:onClick="onRadioButtonClicked"/>
+            </RadioGroup>
+
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" >
@@ -133,10 +129,6 @@
                     android:paddingLeft="1dp"
                     android:paddingRight="1dp"
                     android:layout_weight="1.0" />
-            </TableRow>
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" >
 
                 <ImageButton
                     android:layout_width="fill_parent"
@@ -150,6 +142,10 @@
                     android:paddingLeft="1dp"
                     android:paddingRight="1dp"
                     android:layout_weight="1.0" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
 
                 <ImageButton
                     android:layout_width="fill_parent"
@@ -189,10 +185,6 @@
                     android:paddingLeft="1dp"
                     android:paddingRight="1dp"
                     android:layout_weight="1.0" />
-            </TableRow>
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" >
 
                 <ImageButton
                     android:layout_width="fill_parent"
@@ -219,6 +211,10 @@
                     android:paddingLeft="1dp"
                     android:paddingRight="1dp"
                     android:layout_weight="1.0" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
 
                 <ImageButton
                     android:layout_width="fill_parent"
@@ -245,10 +241,6 @@
                     android:paddingLeft="1dp"
                     android:paddingRight="1dp"
                     android:layout_weight="1.0" />
-            </TableRow>
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" >
 
                 <ImageButton
                     android:layout_width="fill_parent"
@@ -288,6 +280,10 @@
                     android:paddingLeft="1dp"
                     android:paddingRight="1dp"
                     android:layout_weight="1.0" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
 
                 <ImageButton
                     android:layout_width="fill_parent"
@@ -301,10 +297,6 @@
                     android:paddingLeft="1dp"
                     android:paddingRight="1dp"
                     android:layout_weight="1.0" />
-            </TableRow>
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" >
 
                 <ImageButton
                     android:layout_width="fill_parent"
@@ -413,10 +405,6 @@
                     android:paddingLeft="1dp"
                     android:paddingRight="1dp"
                     android:layout_weight="1.0" />
-            </TableRow>
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" >
 
                 <ImageButton
                     android:layout_width="fill_parent"
@@ -430,6 +418,10 @@
                     android:paddingLeft="1dp"
                     android:paddingRight="1dp"
                     android:layout_weight="1.0" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
 
                 <ImageButton
                     android:layout_width="fill_parent"
@@ -469,10 +461,6 @@
                     android:paddingLeft="1dp"
                     android:paddingRight="1dp"
                     android:layout_weight="1.0" />
-            </TableRow>
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" >
 
                 <ImageButton
                     android:layout_width="fill_parent"
@@ -499,6 +487,10 @@
                     android:paddingLeft="1dp"
                     android:paddingRight="1dp"
                     android:layout_weight="1.0" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
 
                 <ImageButton
                     android:layout_width="fill_parent"
@@ -525,10 +517,6 @@
                     android:paddingLeft="1dp"
                     android:paddingRight="1dp"
                     android:layout_weight="1.0" />
-            </TableRow>
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" >
 
                 <ImageButton
                     android:layout_width="fill_parent"
@@ -568,6 +556,10 @@
                     android:paddingLeft="1dp"
                     android:paddingRight="1dp"
                     android:layout_weight="1.0" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
 
                 <ImageButton
                     android:layout_width="fill_parent"
@@ -581,10 +573,6 @@
                     android:paddingLeft="1dp"
                     android:paddingRight="1dp"
                     android:layout_weight="1.0" />
-            </TableRow>
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" >
 
                 <ImageButton
                     android:layout_width="fill_parent"
@@ -660,19 +648,6 @@
                     android:layout_height="wrap_content"
                     android:scaleType="fitCenter"
                     android:adjustViewBounds="true"
-                    android:src="@drawable/island40"
-                    android:id="@+id/imageButton40"
-                    android:paddingBottom="1dp"
-                    android:paddingTop="1dp"
-                    android:paddingLeft="1dp"
-                    android:paddingRight="1dp"
-                    android:layout_weight="1.0" />
-
-                <ImageButton
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:scaleType="fitCenter"
-                    android:adjustViewBounds="true"
                     android:src="@drawable/island41"
                     android:id="@+id/imageButton41"
                     android:paddingBottom="1dp"
@@ -693,10 +668,6 @@
                     android:paddingLeft="1dp"
                     android:paddingRight="1dp"
                     android:layout_weight="1.0" />
-            </TableRow>
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" >
 
                 <ImageButton
                     android:layout_width="fill_parent"
@@ -723,6 +694,10 @@
                     android:paddingLeft="1dp"
                     android:paddingRight="1dp"
                     android:layout_weight="1.0" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
 
                 <ImageButton
                     android:layout_width="fill_parent"
@@ -749,10 +724,6 @@
                     android:paddingLeft="1dp"
                     android:paddingRight="1dp"
                     android:layout_weight="1.0" />
-            </TableRow>
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" >
 
                 <ImageButton
                     android:layout_width="fill_parent"
@@ -792,6 +763,10 @@
                     android:paddingLeft="1dp"
                     android:paddingRight="1dp"
                     android:layout_weight="1.0" />
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
 
                 <ImageButton
                     android:layout_width="fill_parent"
@@ -805,17 +780,12 @@
                     android:paddingLeft="1dp"
                     android:paddingRight="1dp"
                     android:layout_weight="1.0" />
-            </TableRow>
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" >
 
                 <ImageButton
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:scaleType="fitCenter"
                     android:adjustViewBounds="true"
-                    android:src="@drawable/island51"
                     android:id="@+id/imageButton51"
                     android:paddingBottom="1dp"
                     android:paddingTop="1dp"
@@ -828,7 +798,6 @@
                     android:layout_height="wrap_content"
                     android:scaleType="fitCenter"
                     android:adjustViewBounds="true"
-                    android:src="@drawable/island52"
                     android:id="@+id/imageButton52"
                     android:paddingBottom="1dp"
                     android:paddingTop="1dp"
@@ -841,7 +810,6 @@
                     android:layout_height="wrap_content"
                     android:scaleType="fitCenter"
                     android:adjustViewBounds="true"
-                    android:src="@drawable/island53"
                     android:id="@+id/imageButton53"
                     android:paddingBottom="1dp"
                     android:paddingTop="1dp"
@@ -854,7 +822,6 @@
                     android:layout_height="wrap_content"
                     android:scaleType="fitCenter"
                     android:adjustViewBounds="true"
-                    android:src="@drawable/island54"
                     android:id="@+id/imageButton54"
                     android:paddingBottom="1dp"
                     android:paddingTop="1dp"
@@ -862,114 +829,6 @@
                     android:paddingRight="1dp"
                     android:layout_weight="1.0" />
             </TableRow>
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" >
-
-                <ImageButton
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:scaleType="fitCenter"
-                    android:adjustViewBounds="true"
-                    android:src="@drawable/island55"
-                    android:id="@+id/imageButton55"
-                    android:paddingBottom="1dp"
-                    android:paddingTop="1dp"
-                    android:paddingLeft="1dp"
-                    android:paddingRight="1dp"
-                    android:layout_weight="1.0" />
-
-                <ImageButton
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:scaleType="fitCenter"
-                    android:adjustViewBounds="true"
-                    android:src="@drawable/island56"
-                    android:id="@+id/imageButton56"
-                    android:paddingBottom="1dp"
-                    android:paddingTop="1dp"
-                    android:paddingLeft="1dp"
-                    android:paddingRight="1dp"
-                    android:layout_weight="1.0" />
-
-                <ImageButton
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:scaleType="fitCenter"
-                    android:adjustViewBounds="true"
-                    android:src="@drawable/island57"
-                    android:id="@+id/imageButton57"
-                    android:paddingBottom="1dp"
-                    android:paddingTop="1dp"
-                    android:paddingLeft="1dp"
-                    android:paddingRight="1dp"
-                    android:layout_weight="1.0" />
-
-                <ImageButton
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:scaleType="fitCenter"
-                    android:adjustViewBounds="true"
-                    android:src="@drawable/island58"
-                    android:id="@+id/imageButton58"
-                    android:paddingBottom="1dp"
-                    android:paddingTop="1dp"
-                    android:paddingLeft="1dp"
-                    android:paddingRight="1dp"
-                    android:layout_weight="1.0" />
-            </TableRow>
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageButton
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:scaleType="fitCenter"
-                    android:adjustViewBounds="true"
-                    android:src="@drawable/island59"
-                    android:id="@+id/imageButton59"
-                    android:paddingBottom="1dp"
-                    android:paddingTop="1dp"
-                    android:paddingLeft="1dp"
-                    android:paddingRight="1dp"
-                    android:layout_weight="1.0" />
-                <ImageButton
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:scaleType="fitCenter"
-                    android:adjustViewBounds="true"
-                    android:src="@drawable/island60"
-                    android:id="@+id/imageButton60"
-                    android:paddingBottom="1dp"
-                    android:paddingTop="1dp"
-                    android:paddingLeft="1dp"
-                    android:paddingRight="1dp"
-                    android:layout_weight="1.0" />
-                <ImageButton
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:scaleType="fitCenter"
-                    android:adjustViewBounds="true"
-                    android:id="@+id/imageButton61"
-                    android:paddingBottom="1dp"
-                    android:paddingTop="1dp"
-                    android:paddingLeft="1dp"
-                    android:paddingRight="1dp"
-                    android:layout_weight="1.0" />/>
-                <ImageButton
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:scaleType="fitCenter"
-                    android:adjustViewBounds="true"
-                    android:id="@+id/imageButton62"
-                    android:paddingBottom="1dp"
-                    android:paddingTop="1dp"
-                    android:paddingLeft="1dp"
-                    android:paddingRight="1dp"
-                    android:layout_weight="1.0" />/>
-            </TableRow>
-
             <TableRow
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" >

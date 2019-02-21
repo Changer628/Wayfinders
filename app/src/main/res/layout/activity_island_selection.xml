@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_island_selection"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.shelfspace.michael.wayfinders.IslandSelection">
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:id="@+id/islandSelect00"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:layout_weight="1.0" />
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:id="@+id/islandSelect01"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:layout_weight="1.0" />
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:id="@+id/islandSelect02"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:layout_weight="1.0" />
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:id="@+id/islandSelect03"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:layout_weight="1.0" />
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:id="@+id/islandSelect04"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:layout_weight="1.0" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:id="@+id/islandSelect05"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:layout_weight="1.0" />
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:id="@+id/islandSelect06"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:layout_weight="1.0" />
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:id="@+id/islandSelect07"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:layout_weight="1.0" />
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:id="@+id/islandSelect08"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:layout_weight="1.0" />
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:id="@+id/islandSelect09"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:layout_weight="1.0" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:id="@+id/islandSelect10"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:layout_weight="1.0" />
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:id="@+id/islandSelect11"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:layout_weight="1.0" />
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:id="@+id/islandSelect12"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:layout_weight="1.0" />
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:id="@+id/islandSelect13"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:layout_weight="1.0" />
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:id="@+id/islandSelect14"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:layout_weight="1.0" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:id="@+id/islandSelect15"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:layout_weight="1.0" />
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:id="@+id/islandSelect16"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:layout_weight="1.0" />
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:id="@+id/islandSelect17"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:layout_weight="1.0" />
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:id="@+id/islandSelect18"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:layout_weight="1.0" />
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:id="@+id/islandSelect19"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:layout_weight="1.0" />
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:id="@+id/islandSelect20"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:layout_weight="1.0" />
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:id="@+id/islandSelect21"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:layout_weight="1.0" />
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:id="@+id/islandSelect22"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:layout_weight="1.0" />
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:id="@+id/islandSelect23"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:layout_weight="1.0" />
+
+            <ImageButton
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:id="@+id/islandSelect24"
+                android:paddingBottom="1dp"
+                android:paddingTop="1dp"
+                android:paddingLeft="1dp"
+                android:paddingRight="1dp"
+                android:layout_weight="1.0" />
+        </TableRow>
+    </TableLayout>
+
+</RelativeLayout>

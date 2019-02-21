@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Wayfinders</string>
+    <string name="Players2">2 Players</string>
+    <string name="Players3">3 Players</string>
+    <string name="Players4">4 Players</string>
+    <string name="title_activity_board_setup">BoardSetup</string>
+    <string name="Player1">Player 1:</string>
+    <string name="Player2">Player 2:</string>
+    <string name="Player3">Player 3:</string>
+    <string name="Player4">Player 4:</string>
+    <string name="MaxPlayers">4</string>
 </resources>
