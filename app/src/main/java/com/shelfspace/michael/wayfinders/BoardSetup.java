@@ -104,8 +104,6 @@ public class BoardSetup extends AppCompatActivity {
     }
 
     public boolean onOptionsItemSelected(MenuItem item){
-        //Intent myIntent = new Intent(getApplicationContext(), Setup.class);
-        //startActivityForResult(myIntent, 0);
         finish();
         return true;
     }

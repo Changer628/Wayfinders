@@ -88,4 +88,8 @@ public class ToggleButtonGroupTableLayout extends TableLayout  implements OnClic
 
         return -1;
     }
+
+    public void setActiveRadioButton(RadioButton radioButton){
+        activeRadioButton = radioButton;
+    }
 }

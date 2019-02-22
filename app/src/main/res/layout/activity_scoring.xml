@@ -26,7 +26,7 @@
             <com.shelfspace.michael.wayfinders.ToggleButtonGroupTableLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:id="@+id/radGroup1">
+                android:id="@+id/radGroup">
                 <TableRow>
                     <RadioButton
                         android:id="@+id/player1Score"
@@ -40,6 +40,7 @@
                         android:paddingRight="1dp"
                         android:paddingTop="1dp"
                         android:scaleType="fitCenter"
+                        android:buttonTint="#F8EC1D"
                         android:text="@string/Player1"
                         android:onClick="onRadioButtonClicked"/>
 
@@ -55,6 +56,7 @@
                         android:paddingRight="1dp"
                         android:paddingTop="1dp"
                         android:scaleType="fitCenter"
+                        android:buttonTint="#FF0000"
                         android:text="@string/Player2"
                         android:onClick="onRadioButtonClicked"/>
                 </TableRow>
@@ -71,6 +73,7 @@
                         android:paddingRight="1dp"
                         android:paddingTop="1dp"
                         android:scaleType="fitCenter"
+                        android:buttonTint="#008000"
                         android:text="@string/Player3"
                         android:onClick="onRadioButtonClicked"/>
 
@@ -86,6 +89,7 @@
                         android:paddingRight="1dp"
                         android:paddingTop="1dp"
                         android:scaleType="fitCenter"
+                        android:buttonTint="#0000FF"
                         android:text="@string/Player4"
                         android:onClick="onRadioButtonClicked"/>
                 </TableRow>
