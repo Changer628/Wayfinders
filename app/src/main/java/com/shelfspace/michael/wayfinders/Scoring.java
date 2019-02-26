@@ -37,6 +37,7 @@ public class Scoring extends AppCompatActivity {
 
         //Setup scoring values for each player
         final ArrayList<PlayerScore> playerScores = new ArrayList<PlayerScore>();
+        final GroupScore groupScore;
 
         //This layout manages the custom radiobutton setup we have. Normally radiobuttons have to all be on one row or one column.
         int layoutID= getResources().getIdentifier("radGroup", "id", getPackageName());
@@ -139,7 +140,7 @@ public class Scoring extends AppCompatActivity {
             final RadioButton myRadioButton = (RadioButton) findViewById(radioID);
             //Set the initial player score of 0
             if (i < playerNumber) {
-                playerScores.add(new PlayerScore());
+                playerScores.add(new PlayerScore(this));
                 myRadioButton.setText("Player " + (i + 1) + ": " + playerScores.get(i).getBaseValue());
                 final int index = i;
                 /*myRadioButton.setOnClickListener(new View.OnClickListener() {
@@ -174,6 +175,8 @@ public class Scoring extends AppCompatActivity {
             }
         }
 
+        groupScore = new GroupScore(playerScores);
+
     }
 
     public String inputStreamToString(InputStream inputStream) {
@@ -199,6 +202,11 @@ public class Scoring extends AppCompatActivity {
             totalScores.add(player.getBaseValue());
         }
         return totalScores;
+    }
+
+    //The real method to get the player scores. Will also include the bonus values.
+    public ArrayList<Integer> totalPlayerScores (ArrayList<ArrayList<Integer>> allPlayersIslands, ArrayList<ArrayList<Integer>> allPlayersIndices, ArrayList<PlayerScore> playerScores){
+
     }
 
     //Might be able to use radiobutton as input to get which colour. Delete this comment if unneeded
