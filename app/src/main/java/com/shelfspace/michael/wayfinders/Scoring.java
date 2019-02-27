@@ -44,12 +44,68 @@ public class Scoring extends AppCompatActivity {
         final ToggleButtonGroupTableLayout toggleButtonGroupTableLayout = (ToggleButtonGroupTableLayout) findViewById(layoutID);
 
         //While the max player count should always be 4, trying to track this down after a change would be a little tedious
-        final int max = Integer.parseInt(getString(R.string.MaxPlayers));
+        final int max = this.getResources().getInteger(R.integer.maxPlayers);
         //temp string for formatting
         String buttonID = "";
 
         //Populate islands onto the board
         final ImageButton[] buttonList = new ImageButton[setupIslands.size()];
+
+        //setup Playerscore objects first, then create groupScore object
+        for (int i = 0; i < playerNumber; i++){
+            playerScores.add(new PlayerScore(this));
+        }
+
+        groupScore = new GroupScore(playerScores);
+
+
+
+
+
+
+        //Setup + Remove buttons for players that don't exist
+        for (int i = 0; i < max; i++) {
+            //Used to get the ID of the associated player button
+            buttonID = "player" + (i+1) + "Score";
+            final int radioID = getResources().getIdentifier(buttonID, "id", getPackageName());
+            final RadioButton myRadioButton = (RadioButton) findViewById(radioID);
+            //Set the initial player score of 0
+            if (i < playerNumber) {
+                //playerScores.add(new PlayerScore(this));
+                //myRadioButton.setText("Player " + (i + 1) + ": " + groupScore.playerScores.get(i).getBaseValue());
+                myRadioButton.setText("Player " + (i + 1) + ": " + playerScores.get(i).getBaseValue());
+                final int index = i;
+                /*myRadioButton.setOnClickListener(new View.OnClickListener() {
+                    public void onClick(View v) {
+                        activePlayer = playerScores.get(index);
+                        activeIndex = index;
+                    }
+                });*/
+                myRadioButton.setOnClickListener(new View.OnClickListener() {
+                    public void onClick(View v) {
+                        final RadioButton rb = (RadioButton) v;
+                        if ( toggleButtonGroupTableLayout.getCheckedRadioButtonId() != -1 ) {
+                            //Uncheck the current activeButton
+                            int activeButtonID = toggleButtonGroupTableLayout.getCheckedRadioButtonId();
+                            RadioButton uncheckRadioButton = (RadioButton) findViewById(activeButtonID);
+                            uncheckRadioButton.setChecked(false);
+                        }
+                        //Set the new active RadioButton
+                        rb.setChecked(true);
+                        toggleButtonGroupTableLayout.setActiveRadioButton(rb);
+                        activePlayer = playerScores.get(index);
+                        activeIndex = index;
+
+                        //Update the borders for the current radioButton
+                        updateSelectedIsland(activePlayer, activeIndex, buttonList);
+                    }
+                });
+            } else {
+                //disable the button as they aren't in the game
+                myRadioButton.setVisibility(View.INVISIBLE);
+                myRadioButton.setEnabled(false);
+            }
+        }
 
         //Initialize all of the buttons in the activity
         for (int i = 0; i < setupIslands.size(); i++) {
@@ -132,50 +188,7 @@ public class Scoring extends AppCompatActivity {
             });
         }
 
-        //Setup + Remove buttons for players that don't exist
-        for (int i = 0; i < max; i++) {
-            //Used to get the ID of the associated player button
-            buttonID = "player" + (i+1) + "Score";
-            final int radioID = getResources().getIdentifier(buttonID, "id", getPackageName());
-            final RadioButton myRadioButton = (RadioButton) findViewById(radioID);
-            //Set the initial player score of 0
-            if (i < playerNumber) {
-                playerScores.add(new PlayerScore(this));
-                myRadioButton.setText("Player " + (i + 1) + ": " + playerScores.get(i).getBaseValue());
-                final int index = i;
-                /*myRadioButton.setOnClickListener(new View.OnClickListener() {
-                    public void onClick(View v) {
-                        activePlayer = playerScores.get(index);
-                        activeIndex = index;
-                    }
-                });*/
-                myRadioButton.setOnClickListener(new View.OnClickListener() {
-                    public void onClick(View v) {
-                        final RadioButton rb = (RadioButton) v;
-                        if ( toggleButtonGroupTableLayout.getCheckedRadioButtonId() != -1 ) {
-                            //Uncheck the current activeButton
-                            int activeButtonID = toggleButtonGroupTableLayout.getCheckedRadioButtonId();
-                            RadioButton uncheckRadioButton = (RadioButton) findViewById(activeButtonID);
-                            uncheckRadioButton.setChecked(false);
-                        }
-                        //Set the new active RadioButton
-                        rb.setChecked(true);
-                        toggleButtonGroupTableLayout.setActiveRadioButton(rb);
-                        activePlayer = playerScores.get(index);
-                        activeIndex = index;
 
-                        //Update the borders for the current radioButton
-                        updateSelectedIsland(activePlayer, activeIndex, buttonList);
-                    }
-                });
-            } else {
-                //disable the button as they aren't in the game
-                myRadioButton.setVisibility(View.INVISIBLE);
-                myRadioButton.setEnabled(false);
-            }
-        }
-
-        groupScore = new GroupScore(playerScores);
 
     }
 

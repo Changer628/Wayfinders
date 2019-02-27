@@ -6,19 +6,20 @@ import java.util.ArrayList;
  * Created by Michael on 25/02/2019.
  */
 
-public class GroupScore {
-    ArrayList<PlayerScore> groupScore;
+public class GroupScore extends ArrayList{
+    ArrayList<PlayerScore> playerScores;
 
-    public GroupScore (ArrayList<PlayerScore> groupScore){
-        this.groupScore = groupScore;
+    public GroupScore (ArrayList<PlayerScore> playerScores){
+        this.playerScores = playerScores;
     }
 
-    private ArrayList<Integer> totalScore (){
+    public ArrayList<Integer> totalScore (){
         //Calculate bonus values for all players
-
         //Need to cycle through all players
-        for (PlayerScore player : groupScore) {
-            totalScores.add(player.getBaseValue());
+        ArrayList<Integer> totalScores = new ArrayList<Integer>();
+        for (PlayerScore player : playerScores) {
+            totalScores.add(player.totalScore());
         }
+        return totalScores;
     }
 }

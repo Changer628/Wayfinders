@@ -16,4 +16,5 @@
     <integer name="boardLength">3</integer>
     <integer name="islandSurround">34</integer>
     <integer name="islandMaxIndex">24</integer>
+    <integer name="maxPlayers">4</integer>
 </resources>

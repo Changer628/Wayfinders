@@ -127,6 +127,20 @@ public class PlayerScore {
         }
     }
 
+    //Calculate the bonus scores of islands the player has settled.
+    public int bonusScore(){
+        int bonusScore = 0;
+        bonusScore += pointsColourIsland();
+        return bonusScore;
+    }
+
+    public int totalScore(){
+        int baseScore = this.getBaseValue();
+        int bonusScore = this.bonusScore();
+        int totalScore = baseScore + bonusScore;
+        return totalScore;
+    }
+
     //These are the islands that score 3 points for every colour of that island type you have
     //Island 4, 13, 22, 31, 40: 3 points for each yellow island you have settled. (The same symbol exists for other colors.)
     public int pointsColourIsland (){
