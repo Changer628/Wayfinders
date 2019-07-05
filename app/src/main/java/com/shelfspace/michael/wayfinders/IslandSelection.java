@@ -23,7 +23,7 @@ public class IslandSelection extends AppCompatActivity {
         //This is required to update the button image after.
         final int buttonIndex = intent.getIntExtra("buttonID", 0);
         //The number of the old island selected. If -1, it means that no island has been selected yet
-        final int oldIslandNum = intent.getIntExtra("oldIslandNum", 0);
+        final int oldIslandNum = intent.getIntExtra("oldIslandNum", -1);
 
         //If an island was previously selected for this spot, we need to allow the user to select the same island again
         if (oldIslandNum > -1){
@@ -69,6 +69,7 @@ public class IslandSelection extends AppCompatActivity {
                     returnIntent.putExtra("buttonID", buttonIndex);
                     returnIntent.putExtra("islandImage", imageID);
                     returnIntent.putExtra("islandNum", islandNum);
+                    returnIntent.putExtra("replacedIslandNum", oldIslandNum);
                     setResult(Activity.RESULT_OK,returnIntent);
                     finish();
                 }

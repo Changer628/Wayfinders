@@ -1,14 +1,18 @@
 package com.shelfspace.michael.wayfinders;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.RadioButton;
+import android.widget.TextView;
 
 import com.google.gson.Gson;
 
@@ -30,14 +34,24 @@ public class Scoring extends AppCompatActivity {
         String myJson=inputStreamToString(this.getResources().openRawResource(R.raw.islands));
         final Island myModel = new Gson().fromJson(myJson, Island.class);
 
-        //Set all player's score to 0 + hide unused players
+
         Intent intent = getIntent();
+
+        String priorActivity = intent.getStringExtra("callingActivity");
+
+        if (priorActivity.equals("MainActivity")){
+
+        }else{
+
+        }
+
+        //Set all player's score to 0 + hide unused players
         final int playerNumber = intent.getIntExtra("players", 0);
         setupIslands = getIntent().getIntegerArrayListExtra("setupIslands");
 
         //Setup scoring values for each player
         final ArrayList<PlayerScore> playerScores = new ArrayList<PlayerScore>();
-        final GroupScore groupScore;
+        final GroupScore groupScore = new GroupScore();
 
         //This layout manages the custom radiobutton setup we have. Normally radiobuttons have to all be on one row or one column.
         int layoutID= getResources().getIdentifier("radGroup", "id", getPackageName());
@@ -51,18 +65,6 @@ public class Scoring extends AppCompatActivity {
         //Populate islands onto the board
         final ImageButton[] buttonList = new ImageButton[setupIslands.size()];
 
-        //setup Playerscore objects first, then create groupScore object
-        for (int i = 0; i < playerNumber; i++){
-            playerScores.add(new PlayerScore(this));
-        }
-
-        groupScore = new GroupScore(playerScores);
-
-
-
-
-
-
         //Setup + Remove buttons for players that don't exist
         for (int i = 0; i < max; i++) {
             //Used to get the ID of the associated player button
@@ -71,7 +73,7 @@ public class Scoring extends AppCompatActivity {
             final RadioButton myRadioButton = (RadioButton) findViewById(radioID);
             //Set the initial player score of 0
             if (i < playerNumber) {
-                //playerScores.add(new PlayerScore(this));
+                playerScores.add(new PlayerScore(this));
                 //myRadioButton.setText("Player " + (i + 1) + ": " + groupScore.playerScores.get(i).getBaseValue());
                 myRadioButton.setText("Player " + (i + 1) + ": " + playerScores.get(i).getBaseValue());
                 final int index = i;
@@ -153,6 +155,7 @@ public class Scoring extends AppCompatActivity {
                             buttonList[finalI].setBackgroundResource(0);
                         }
 
+                        ////////////////////////////////////////////////////////
                         //Store all the island numbers settled by each player (will also need their relative position)
                         ArrayList<ArrayList<Integer>> allPlayersIslands = new ArrayList<ArrayList<Integer>>();
                         ArrayList<ArrayList<Integer>> allPlayersIndices = new ArrayList<ArrayList<Integer>>();
@@ -166,8 +169,13 @@ public class Scoring extends AppCompatActivity {
                             entry = playerScores.get(i).getIndices();
                             allPlayersIndices.add(entry);
                         }
+                        ////////////////////////////////////////////////////////
+
                         ArrayList<Integer> totalScores = new ArrayList<Integer>();
-                        totalScores = tempTotalPlayerScores(playerScores);
+                        //totalScores = tempTotalPlayerScores(playerScores);
+
+                        //Get the updated player scores with bonus values
+                        totalScores = groupScore.totalScore(playerScores);
 
                         for (int i = 0; i < max; i++) {
                             //Used to get the ID of the associated player button
@@ -188,6 +196,99 @@ public class Scoring extends AppCompatActivity {
             });
         }
 
+        int scoreID = getResources().getIdentifier("subResource", "id", getPackageName());
+        Button subResource = ((Button) findViewById(scoreID));
+        subResource.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                if (activePlayer != null){
+                    TextView textView=(TextView)findViewById(R.id.resources);
+                    int resources = activePlayer.getResources();
+                    if (resources > 0){
+                        activePlayer.setResources(resources - 1);
+                        textView.setText(String.valueOf(activePlayer.getResources()));
+                        scoreUpdate(activeIndex, playerNumber, activePlayer);
+                    }
+                }
+            }
+        });
+
+        scoreID = getResources().getIdentifier("addResource", "id", getPackageName());
+        Button addResource = ((Button) findViewById(scoreID));
+        addResource.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                if (activePlayer != null){
+                    TextView textView=(TextView)findViewById(R.id.resources);
+                    activePlayer.setResources(activePlayer.getResources() + 1);
+                    textView.setText(String.valueOf(activePlayer.getResources()));
+                    scoreUpdate(activeIndex, playerNumber, activePlayer);
+                }
+            }
+        });
+
+        scoreID = getResources().getIdentifier("subWorker", "id", getPackageName());
+        Button subWorker = ((Button) findViewById(scoreID));
+        subWorker.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                if (activePlayer != null){
+                    TextView textView=(TextView)findViewById(R.id.workers);
+                    int workers = activePlayer.getWorkers();
+                    if (workers > 0){
+                        activePlayer.setWorkers(workers - 1);
+                        textView.setText(String.valueOf(activePlayer.getWorkers()));
+                        scoreUpdate(activeIndex, playerNumber, activePlayer);
+                    }
+                }
+            }
+        });
+
+        scoreID = getResources().getIdentifier("addWorker", "id", getPackageName());
+        Button addWorker = ((Button) findViewById(scoreID));
+        addWorker.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                if (activePlayer != null){
+                    TextView textView=(TextView)findViewById(R.id.workers);
+                    activePlayer.setWorkers(activePlayer.getWorkers() + 1);
+                    textView.setText(String.valueOf(activePlayer.getWorkers()));
+                    scoreUpdate(activeIndex, playerNumber, activePlayer);
+                }
+            }
+        });
+
+        int submitID = getResources().getIdentifier("gameComplete", "id", getPackageName());
+        Button endButton = ((Button) findViewById(submitID));
+        endButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                AlertDialog myQuittingDialogBox =new AlertDialog.Builder(Scoring.this)
+                        //set message, title, and icon
+                        .setTitle("Game Complete")
+                        .setMessage("Are you sure you would like to end this session?")
+
+                        //This is actually the button for No
+                        .setPositiveButton("No", new DialogInterface.OnClickListener() {
+
+                            public void onClick(DialogInterface dialog, int whichButton) {
+                                dialog.dismiss();
+                            }
+
+                        })
+
+
+                        //This is actually the button for Yes
+                        .setNegativeButton("Yes", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int which) {
+                                //your deleting code
+                                Intent intent = new Intent(Scoring.this,
+                                        MainActivity.class);
+                                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                                startActivity(intent);
+                                dialog.dismiss();
+
+                            }
+                        })
+                        .create();
+                myQuittingDialogBox.show();
+            }
+        });
 
 
     }
@@ -217,10 +318,10 @@ public class Scoring extends AppCompatActivity {
         return totalScores;
     }
 
-    //The real method to get the player scores. Will also include the bonus values.
+    /*//The real method to get the player scores. Will also include the bonus values.
     public ArrayList<Integer> totalPlayerScores (ArrayList<ArrayList<Integer>> allPlayersIslands, ArrayList<ArrayList<Integer>> allPlayersIndices, ArrayList<PlayerScore> playerScores){
 
-    }
+    }*/
 
     //Might be able to use radiobutton as input to get which colour. Delete this comment if unneeded
     public void updateSelectedIsland (PlayerScore playerScore, int playerIndex, ImageButton[] buttonList){
@@ -238,6 +339,26 @@ public class Scoring extends AppCompatActivity {
         }
         //iterate through all buttons
 
+        //Update Resource + Worker values
+        TextView textView=(TextView)findViewById(R.id.resources);
+        textView.setText(String.valueOf(playerScore.getResources()));
+
+        textView=(TextView)findViewById(R.id.workers);
+        textView.setText(String.valueOf(playerScore.getWorkers()));
+
+
+    }
+
+
+    public void scoreUpdate (int playerIndex, int playerNumber, PlayerScore playerScore){
+        //Used to get the ID of the associated player button
+        String tempButtonID = "player" + (playerIndex + 1) + "Score";
+        final int radioID = getResources().getIdentifier(tempButtonID, "id", getPackageName());
+        final RadioButton myRadioButton = (RadioButton) findViewById(radioID);
+        //Update the player score
+        if (playerIndex < playerNumber) {
+            myRadioButton.setText("Player " + (playerIndex + 1) + ": " + playerScore.totalScore());
+        }
     }
 
     public boolean onOptionsItemSelected(MenuItem item){

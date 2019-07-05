@@ -91,6 +91,7 @@ public class BoardSetup extends AppCompatActivity {
                     myIntent.putIntegerArrayListExtra("setupIslands", (ArrayList<Integer>) orderedIslands);
                     //The number of players in the game
                     myIntent.putExtra("players", playerNumber);
+                    myIntent.putExtra("callingActivity", "scoring");
                     BoardSetup.this.startActivity(myIntent);
                 }
                 /*Intent myIntent = new Intent(Setup.this, BoardSetup.class);
@@ -116,11 +117,16 @@ public class BoardSetup extends AppCompatActivity {
                 int buttonID = data.getIntExtra("buttonID", 0);
                 int selectedIsland = data.getIntExtra("islandImage", 0);
                 int islandNum = data.getIntExtra("islandNum", 0);
+                int replacedIslandNum = data.getIntExtra("replacedIslandNum", -1);
                 //Update button to reflect the image of the selected Island
                 ImageButton button = ((ImageButton) findViewById(buttonID));
                 button.setImageResource(selectedIsland);
                 button.setTag(islandNum);
                 islandNumbers.remove(Integer.valueOf(islandNum));
+                if (replacedIslandNum > -1 && replacedIslandNum != islandNum){
+                    islandNumbers.add(replacedIslandNum);
+                    Collections.sort(islandNumbers);
+                }
             }
             if (resultCode == Activity.RESULT_CANCELED) {
                 //Write your code if there's no result

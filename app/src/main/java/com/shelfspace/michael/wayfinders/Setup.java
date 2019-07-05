@@ -1,5 +1,6 @@
 package com.shelfspace.michael.wayfinders;
 
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -39,12 +40,24 @@ public class Setup extends AppCompatActivity {
         Button submitButton = ((Button) findViewById(resID));
         submitButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent myIntent = new Intent(Setup.this, BoardSetup.class);
-                myIntent.putExtra("players", playerNumber);
-                //Sort the numbers collected so that they'll appear in numerical order
-                Collections.sort(islandNumbers);
-                myIntent.putIntegerArrayListExtra("islands", (ArrayList<Integer>) islandNumbers );
-                Setup.this.startActivity(myIntent);
+                if (playerNumber >= 2 && islandNumbers.size() == 25){
+                    Intent myIntent = new Intent(Setup.this, BoardSetup.class);
+                    myIntent.putExtra("players", playerNumber);
+                    //Sort the numbers collected so that they'll appear in numerical order
+                    Collections.sort(islandNumbers);
+                    myIntent.putIntegerArrayListExtra("islands", (ArrayList<Integer>) islandNumbers );
+                    Setup.this.startActivity(myIntent);
+                }else if (playerNumber < 2){
+                    new AlertDialog.Builder(Setup.this).setTitle("Setup Incomplete").setMessage("Please select the number of players").setNeutralButton("Close", null).show();
+                }else if (islandNumbers.size() == 26){
+                    new AlertDialog.Builder(Setup.this).setTitle("Setup Incomplete").setMessage(islandNumbers.size() + " islands selected, please remove " + (islandNumbers.size() - 25) + " island").setNeutralButton("Close", null).show();
+                }else if (islandNumbers.size() > 26){
+                    new AlertDialog.Builder(Setup.this).setTitle("Setup Incomplete").setMessage(islandNumbers.size() + " islands selected, please remove " + (islandNumbers.size() - 25) + " islands").setNeutralButton("Close", null).show();
+                }else if (islandNumbers.size() == 24){
+                    new AlertDialog.Builder(Setup.this).setTitle("Setup Incomplete").setMessage(islandNumbers.size() + " islands selected, please add " + (25 - islandNumbers.size()) + " island").setNeutralButton("Close", null).show();
+                }else if (islandNumbers.size() < 24){
+                    new AlertDialog.Builder(Setup.this).setTitle("Setup Incomplete").setMessage(islandNumbers.size() + " islands selected, please add " + (25 - islandNumbers.size()) + " islands").setNeutralButton("Close", null).show();
+                }
             }
         });
 

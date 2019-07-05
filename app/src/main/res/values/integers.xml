@@ -7,14 +7,18 @@
     <integer name="islandRed3">40</integer>
     <integer name="islandUniqueColour">25</integer>
     <integer name="islandGroups">16</integer>
-    <integer name="island3Cost">43</integer>
-    <integer name="island4Cost">43</integer>
-    <integer name="islandRow">8</integer>
-    <integer name="islandColumn">26</integer>
+    <integer name="island3Cost">26</integer>
+    <integer name="island4Cost">35</integer>
+    <integer name="islandRow">7</integer>
+    <integer name="islandColumn">43</integer>
+    <integer name="islandAwayFromHome">44</integer>
+    <integer name="islandHome">0</integer>
+    <integer name="promoIslandCorners">46</integer>
     <integer name="multiplier">3</integer>
-    <integer name="boardWidth">3</integer>
-    <integer name="boardLength">3</integer>
+    <integer name="boardWidth">5</integer>
+    <integer name="boardLength">5</integer>
     <integer name="islandSurround">34</integer>
     <integer name="islandMaxIndex">24</integer>
     <integer name="maxPlayers">4</integer>
+    <integer name="islandSquares">8</integer>
 </resources>

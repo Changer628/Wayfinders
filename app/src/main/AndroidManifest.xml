@@ -9,6 +9,7 @@
         android:screenOrientation="portrait"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".Settings"></activity>
         <activity
             android:name=".MainActivity"
             android:screenOrientation="portrait">
@@ -33,12 +34,12 @@
         <activity android:name=".IslandSelection">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.shelfspace.michael.wayfinders.BoardSetup" />
+                android:value="com.shelfspace.michael.wayfinders.IslandSelection" />
         </activity>
         <activity android:name=".Scoring">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.shelfspace.michael.wayfinders.BoardSetup" />
+                android:value="com.shelfspace.michael.wayfinders.Scoring" />
         </activity>
     </application>
 

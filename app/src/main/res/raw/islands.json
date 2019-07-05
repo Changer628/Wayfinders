@@ -7,17 +7,19 @@
                 "number": 0,
                 "baseValue": 0,
                 "colour": "none",
-                "cost": ["yellow", "yellow", "orange"],
-                "ability": false
+                "cost": [],
+                "ability": false,
+                "type": "none"
               },
               {
                 "name": "Island 01",
                 "filename": "island01",
                 "number": 1,
-                "baseValue": 2,
+                "baseValue": 1,
                 "colour": "blue",
                 "cost": ["blue"],
-                "ability": false
+                "ability": true,
+                "type": "C"
               },
               {
                 "name": "Island 02",
@@ -26,7 +28,8 @@
                 "baseValue": 3,
                 "colour": "blue",
                 "cost": ["red", "red"],
-                "ability": true
+                "ability": true,
+                "type": "C"
               },
               {
                 "name": "Island 03",
@@ -35,7 +38,8 @@
                 "baseValue": 3,
                 "colour": "blue",
                 "cost": ["orange", "green"],
-                "ability": true
+                "ability": true,
+                "type": "A"
               },
               {
                 "name": "Island 04",
@@ -44,7 +48,8 @@
                 "baseValue": 0,
                 "colour": "blue",
                 "cost": ["yellow", "blue", "blue"],
-                "ability": true
+                "ability": true,
+                "type": "B"
               },
               {
                 "name": "Island 05",
@@ -53,7 +58,8 @@
                 "baseValue": 4,
                 "colour": "blue",
                 "cost": ["blue", "orange", "green"],
-                "ability": true
+                "ability": true,
+                "type": "C"
               },
               {
                 "name": "Island 06",
@@ -62,7 +68,8 @@
                 "baseValue": 4,
                 "colour": "blue",
                 "cost": ["yellow", "red", "orange"],
-                "ability": true
+                "ability": true,
+                "type": "A"
               },
               {
                 "name": "Island 07",
@@ -71,7 +78,8 @@
                 "baseValue": 0,
                 "colour": "blue",
                 "cost": ["yellow", "yellow", "yellow", "red"],
-                "ability": true
+                "ability": true,
+                "type": "B"
               },
               {
                 "name": "Island 08",
@@ -80,7 +88,8 @@
                 "baseValue": 0,
                 "colour": "blue",
                 "cost": ["blue", "orange", "green", "green"],
-                "ability": true
+                "ability": true,
+                "type": "B"
               },
               {
                 "name": "Island 09",
@@ -89,16 +98,18 @@
                 "baseValue": 5,
                 "colour": "blue",
                 "cost": ["yellow", "red", "orange", "green"],
-                "ability": true
+                "ability": true,
+                "type": "A"
               },
               {
                 "name": "Island 10",
                 "filename": "island10",
                 "number": 10,
-                "baseValue": 2,
+                "baseValue": 1,
                 "colour": "orange",
                 "cost": ["orange"],
-                "ability": false
+                "ability": true,
+                "type": "C"
               },
               {
                 "name": "Island 11",
@@ -107,7 +118,8 @@
                 "baseValue": 3,
                 "colour": "orange",
                 "cost": ["blue", "blue"],
-                "ability": true
+                "ability": true,
+                "type": "C"
               },
               {
                 "name": "Island 12",
@@ -116,7 +128,8 @@
                 "baseValue": 3,
                 "colour": "orange",
                 "cost": ["yellow", "green"],
-                "ability": true
+                "ability": true,
+                "type": "A"
               },
               {
                 "name": "Island 13",
@@ -125,7 +138,8 @@
                 "baseValue": 0,
                 "colour": "orange",
                 "cost": ["red", "orange", "orange"],
-                "ability": true
+                "ability": true,
+                "type": "B"
               },
               {
                 "name": "Island 14",
@@ -134,7 +148,8 @@
                 "baseValue": 4,
                 "colour": "orange",
                 "cost": ["yellow", "orange", "green"],
-                "ability": true
+                "ability": true,
+                "type": "C"
               },
               {
                 "name": "Island 15",
@@ -143,7 +158,8 @@
                 "baseValue": 4,
                 "colour": "orange",
                 "cost": ["red", "blue", "green"],
-                "ability": true
+                "ability": true,
+                "type": "A"
               },
               {
                 "name": "Island 16",
@@ -152,7 +168,8 @@
                 "baseValue": 0,
                 "colour": "orange",
                 "cost": ["red", "red", "red", "blue"],
-                "ability": true
+                "ability": true,
+                "type": "B"
               },
               {
                 "name": "Island 17",
@@ -161,7 +178,8 @@
                 "baseValue": 0,
                 "colour": "orange",
                 "cost": ["yellow", "yellow", "orange", "green"],
-                "ability": true
+                "ability": true,
+                "type": "B"
               },
               {
                 "name": "Island 18",
@@ -170,16 +188,18 @@
                 "baseValue": 5,
                 "colour": "orange",
                 "cost": ["yellow", "red", "blue", "green"],
-                "ability": true
+                "ability": true,
+                "type": "A"
               },
               {
                 "name": "Island 19",
                 "filename": "island19",
                 "number": 19,
-                "baseValue": 2,
+                "baseValue": 1,
                 "colour": "green",
                 "cost": ["green"],
-                "ability": false
+                "ability": true,
+                "type": "C"
               },
               {
                 "name": "Island 20",
@@ -188,7 +208,8 @@
                 "baseValue": 3,
                 "colour": "green",
                 "cost": ["orange", "orange"],
-                "ability": true
+                "ability": true,
+                "type": "C"
               },
               {
                 "name": "Island 21",
@@ -197,7 +218,8 @@
                 "baseValue": 3,
                 "colour": "green",
                 "cost": ["yellow", "red"],
-                "ability": true
+                "ability": true,
+                "type": "A"
               },
               {
                 "name": "Island 22",
@@ -206,7 +228,8 @@
                 "baseValue": 0,
                 "colour": "green",
                 "cost": ["blue", "green", "green"],
-                "ability": true
+                "ability": true,
+                "type": "B"
               },
               {
                 "name": "Island 23",
@@ -215,7 +238,8 @@
                 "baseValue": 4,
                 "colour": "green",
                 "cost": ["yellow", "red", "green"],
-                "ability": true
+                "ability": true,
+                "type": "C"
               },
               {
                 "name": "Island 24",
@@ -224,7 +248,8 @@
                 "baseValue": 4,
                 "colour": "green",
                 "cost": ["yellow", "blue", "orange"],
-                "ability": true
+                "ability": true,
+                "type": "A"
               },
               {
                 "name": "Island 25",
@@ -233,7 +258,8 @@
                 "baseValue": 0,
                 "colour": "green",
                 "cost": ["blue", "blue", "blue", "orange"],
-                "ability": true
+                "ability": true,
+                "type": "B"
               },
               {
                 "name": "Island 26",
@@ -242,7 +268,8 @@
                 "baseValue": 0,
                 "colour": "green",
                 "cost": ["yellow", "red", "red", "green"],
-                "ability": true
+                "ability": true,
+                "type": "B"
               },
               {
                 "name": "Island 27",
@@ -251,16 +278,18 @@
                 "baseValue": 5,
                 "colour": "green",
                 "cost": ["yellow", "red", "blue", "orange"],
-                "ability": true
+                "ability": true,
+                "type": "A"
               },
               {
                 "name": "Island 28",
                 "filename": "island28",
                 "number": 28,
-                "baseValue": 2,
+                "baseValue": 1,
                 "colour": "yellow",
                 "cost": ["yellow"],
-                "ability": false
+                "ability": true,
+                "type": "C"
               },
               {
                 "name": "Island 29",
@@ -269,7 +298,8 @@
                 "baseValue": 3,
                 "colour": "yellow",
                 "cost": ["green", "green"],
-                "ability": true
+                "ability": true,
+                "type": "C"
               },
               {
                 "name": "Island 30",
@@ -278,7 +308,8 @@
                 "baseValue": 3,
                 "colour": "yellow",
                 "cost": ["red", "blue"],
-                "ability": true
+                "ability": true,
+                "type": "A"
               },
               {
                 "name": "Island 31",
@@ -287,7 +318,8 @@
                 "baseValue": 0,
                 "colour": "yellow",
                 "cost": ["yellow", "yellow", "orange"],
-                "ability": true
+                "ability": true,
+                "type": "B"
               },
               {
                 "name": "Island 32",
@@ -296,7 +328,8 @@
                 "baseValue": 4,
                 "colour": "yellow",
                 "cost": ["yellow", "red", "blue"],
-                "ability": true
+                "ability": true,
+                "type": "C"
               },
               {
                 "name": "Island 33",
@@ -305,7 +338,8 @@
                 "baseValue": 4,
                 "colour": "yellow",
                 "cost": ["red", "orange", "green"],
-                "ability": true
+                "ability": true,
+                "type": "A"
               },
               {
                 "name": "Island 34",
@@ -314,7 +348,8 @@
                 "baseValue": 0,
                 "colour": "yellow",
                 "cost": ["orange", "orange", "orange", "green"],
-                "ability": true
+                "ability": true,
+                "type": "B"
               },
               {
                 "name": "Island 35",
@@ -323,7 +358,8 @@
                 "baseValue": 0,
                 "colour": "yellow",
                 "cost": ["yellow", "red", "blue", "blue"],
-                "ability": true
+                "ability": true,
+                "type": "B"
               },
               {
                 "name": "Island 36",
@@ -332,16 +368,18 @@
                 "baseValue": 5,
                 "colour": "yellow",
                 "cost": ["red", "blue", "orange", "green"],
-                "ability": true
+                "ability": true,
+                "type": "A"
               },
               {
                 "name": "Island 37",
                 "filename": "island37",
                 "number": 37,
-                "baseValue": 2,
+                "baseValue": 1,
                 "colour": "red",
                 "cost": ["red"],
-                "ability": false
+                "ability": true,
+                "type": "C"
               },
               {
                 "name": "Island 38",
@@ -350,7 +388,8 @@
                 "baseValue": 3,
                 "colour": "red",
                 "cost": ["yellow", "yellow"],
-                "ability": true
+                "ability": true,
+                "type": "C"
               },
               {
                 "name": "Island 39",
@@ -359,7 +398,8 @@
                 "baseValue": 3,
                 "colour": "red",
                 "cost": ["blue", "orange"],
-                "ability": true
+                "ability": true,
+                "type": "A"
               },
               {
                 "name": "Island 40",
@@ -368,7 +408,8 @@
                 "baseValue": 0,
                 "colour": "red",
                 "cost": ["red", "red", "green"],
-                "ability": true
+                "ability": true,
+                "type": "B"
               },
               {
                 "name": "Island 41",
@@ -377,7 +418,8 @@
                 "baseValue": 4,
                 "colour": "red",
                 "cost": ["red", "blue", "orange"],
-                "ability": true
+                "ability": true,
+                "type": "C"
               },
               {
                 "name": "Island 42",
@@ -386,7 +428,8 @@
                 "baseValue": 4,
                 "colour": "red",
                 "cost": ["yellow", "blue", "green"],
-                "ability": true
+                "ability": true,
+                "type": "A"
               },
               {
                 "name": "Island 43",
@@ -395,7 +438,8 @@
                 "baseValue": 0,
                 "colour": "red",
                 "cost": ["yellow", "green", "green", "green"],
-                "ability": true
+                "ability": true,
+                "type": "B"
               },
               {
                 "name": "Island 44",
@@ -404,7 +448,8 @@
                 "baseValue": 0,
                 "colour": "red",
                 "cost": ["red", "blue", "orange", "orange"],
-                "ability": true
+                "ability": true,
+                "type": "B"
               },
               {
                 "name": "Island 45",
@@ -413,7 +458,8 @@
                 "baseValue": 5,
                 "colour": "red",
                 "cost": ["yellow", "blue", "orange", "green"],
-                "ability": true
+                "ability": true,
+                "type": "A"
               },
               {
                 "name": "Promo Island 01",
@@ -421,8 +467,9 @@
                 "number": 46,
                 "baseValue": 0,
                 "colour": "blue",
-                "cost": ["blue", "red", "red", "green", "green"],
-                "ability": true
+                "cost": ["red", "red", "red", "green", "green"],
+                "ability": true,
+                "type": "B"
               },
               {
                 "name": "Promo Island 02",
@@ -430,26 +477,29 @@
                 "number": 47,
                 "baseValue": 0,
                 "colour": "red",
-                "cost": ["red", "green", "green", "orange", "orange"],
-                "ability": true
+                "cost": ["orange", "orange", "orange", "green", "green"],
+                "ability": true,
+                "type": "B"
               },
               {
                 "name": "Promo Island 03",
                 "filename": "promoIsland03",
                 "number": 48,
-                "baseValue": 10,
+                "baseValue": 8,
                 "colour": "green",
-                "cost": ["green", "orange", "orange", "yellow", "yellow"],
-                "ability": true
+                "cost": ["yellow", "yellow", "orange", "orange", "orange"],
+                "ability": true,
+                "type": "C"
               },
               {
                 "name": "Promo Island 04",
                 "filename": "promoIsland04",
                 "number": 49,
-                "baseValue": 4,
+                "baseValue": 2,
                 "colour": "orange",
-                "cost": ["orange", "yellow", "yellow", "blue", "blue"],
-                "ability": true
+                "cost": ["yellow", "yellow", "yellow", "blue", "blue"],
+                "ability": true,
+                "type": "A"
               },
               {
                 "name": "Promo Island 05",
@@ -457,8 +507,9 @@
                 "number": 50,
                 "baseValue": 4,
                 "colour": "yellow",
-                "cost": ["yellow", "blue", "blue", "red", "red"],
-                "ability": true
+                "cost": ["blue", "blue", "blue", "red", "red"],
+                "ability": true,
+                "type": "A"
               }
               ]
 }
